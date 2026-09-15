@@ -1,9 +1,7 @@
 # TaskFlow
 
-![GitHub last commit](https://img.shields.io/github/last-commit/pedroflores-u/taskflow)
-![GitHub issues](https://img.shields.io/github/issues/pedroflores-u/taskflow)
-![GitHub stars](https://img.shields.io/github/stars/pedroflores-u/taskflow)
-![GitHub license](https://img.shields.io/github/license/pedroflores-u/taskflow)
+[![Last Commit](https://img.shields.io/github/last-commit/pedroflores-u/lab05-FLUJO-DE-TAREAS)](https://github.com/pedroflores-u/lab05-FLUJO-DE-TAREAS)
+[![License](https://img.shields.io/github/license/pedroflores-u/lab05-FLUJO-DE-TAREAS)](https://github.com/pedroflores-u/lab05-FLUJO-DE-TAREAS/blob/main/LICENSE)
 
 Sistema moderno y colaborativo para la administración y gestión eficiente de tareas en equipo.
 
@@ -15,10 +13,9 @@ Sistema moderno y colaborativo para la administración y gestión eficiente de t
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
 - [Requisitos](#requisitos)
 - [Instalación](#instalación)
-- [Uso](#uso)
-- [Capturas de pantalla](#capturas-de-pantalla)
-- [Arquitectura](#arquitectura)
+- [Arquitectura y Diagramas](#arquitectura-y-diagramas)
 - [Estructura del proyecto](#estructura-del-proyecto)
+- [Capturas de Pantalla](#capturas-de-pantalla)
 - [Contribuidores](#contribuidores)
 - [Licencia](#licencia)
 
@@ -59,5 +56,21 @@ Sistema moderno y colaborativo para la administración y gestión eficiente de t
 ## Instalación
 1. Clonar el repositorio:
    ```bash
-   git clone [https://github.com/pedroflores-u/taskflow.git](https://github.com/pedroflores-u/taskflow.git)
+   git clone [https://github.com/pedroflores-u/lab05-FLUJO-DE-TAREAS.git](https://github.com/pedroflores-u/lab05-FLUJO-DE-TAREAS.git)
+
+## Arquitectura y Diagramas
+
+El sistema sigue una arquitectura modular orientada a servicios, separando la interfaz de usuario de la lógica de negocio y la persistencia de datos.
+
+### Diagrama de Arquitectura (Mermaid)
+```mermaid
+graph LR
+    Usuario --> Frontend
+    Frontend --> API
+    API --> Autenticación
+    API --> DAO
+    API --> Registro[Registro de actividad]
+    DAO --> MySQL[(MySQL)]
+
+    
    
