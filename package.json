@@ -1,0 +1,10 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "Aplicacion para administrar tareas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}
